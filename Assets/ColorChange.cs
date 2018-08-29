@@ -9,10 +9,12 @@ public class ColorChange : MonoBehaviour {
     public int currentIndex = 0;
     private int nextIndex;
 
-    public float changeColourTime = 2.0f;
+    public float changeColorTime = 2.0f;
 
     private float lastChange = 0.0f;
     private float timer = 0.0f;
+
+    public MaterialColor;
 
     void Start()
     {
@@ -27,13 +29,13 @@ public class ColorChange : MonoBehaviour {
 
         timer += Time.deltaTime;
 
-        if (timer > changeColourTime)
+        if (timer > changeColorTime)
         {
             currentIndex = (currentIndex + 1) % colors.Length;
             nextIndex = (currentIndex + 1) % colors.Length;
             timer = 0.0f;
 
         }
-        renderer.material.color = Color.Lerp(colors[currentIndex], colors[nextIndex], timer / changeColourTime);
+        //renderer.material.color = Color.Lerp(colors[currentIndex], colors[nextIndex], timer / changeColorTime);
     }
 }
