@@ -7,7 +7,7 @@
 		_Frequency ("Frequency", Range(0, 100)) = 10
 		_Amplitude ("Amplitude", Range(0, 3)) = 0.02
 		_RedScale ("RedScale", Range(0, 3)) = 1
-		_GreenScale ("GreenScale", Range(0, 3)) = 1
+		_GreenScale ("GreenScale", Range(0, 3)) = 0
 		_BlueScale ("BlueScale", range(0, 3)) = 1
 
 	}
